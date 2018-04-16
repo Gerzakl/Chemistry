@@ -1,0 +1,16 @@
+body{
+	background-color: #37e22b;
+}
+
+.section-table {
+	padding-top: 150px;
+}
+
+.table-header{
+	text-align: center;
+}
+
+.table-content{
+	background-color: #fff;
+	padding: 20px;
+}

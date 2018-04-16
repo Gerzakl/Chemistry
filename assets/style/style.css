@@ -1,8 +1,60 @@
+@font-face{
+	font-family: "Keleti";
+	src: url(../fonts/Keleti-Regular/Keleti-Regular.ttf);
+}
+
 *{
 	box-sizing: border-box;
+	font-family: "Keleti";
 }
 
 body,h1,h2,h3,p{
 	margin: 0;
 }
 
+h1{
+	font-weight: 900;
+	font-size: 72px;
+}
+
+h2{
+	color: #fff	;
+	font-size: 36px;
+}
+
+.section-main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #660096;
+	color: white;
+}
+
+.container{
+	width: 1440px;
+	margin: 0 auto;
+}
+
+.section-main .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+.main-nav{
+	display: flex;
+}
+
+
+.btn{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.main-link{
+	margin: 50px 50px 0;
+}
