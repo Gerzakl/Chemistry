@@ -12,14 +12,14 @@ body{
 
 .table-content{
 	background-color: #fff;
-	padding: 20px;
+	padding: 26.5px;
 	min-height: 500px;
 }
 
 .elem{
-	width: 63px;
+	width: 73px;
 	height: 72px;
-	margin: 10px 0.5px;
+	margin: 0.5px 0.5px;
 	padding: 5px;
 	text-align: center;
 }
@@ -33,15 +33,39 @@ body{
 }
 
 .elem-name{
-	font-size: 10px;
+	font-size: 11px;
 }
 
-.elem.-Me{
-	background-color: #dedbee;
+.elem.-otherNotMe{
+	background-color: #ec8951;
 }
 
-.elem.-notMe{
-	background-color: #fff83a;
+.elem.-AlMe{
+	background-color: #638fc9;
+}
+
+.elem.-AlErMe{
+	background-color: #dfc1a3;
+}
+
+.elem.-Metalloid{
+	background-color: #4bbda2;
+}
+
+.elem.-Gallogen{
+	background-color: #c09bb5;
+}
+
+.elem.-NobleGas{
+	background-color: #16a6d2;
+}
+
+.elem.-Post{
+	background-color: #b7bd7d;
+}
+
+.elem.-Trans{
+	background-color: #ecd503;
 }
 
 .table-row {
