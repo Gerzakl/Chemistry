@@ -13,4 +13,37 @@ body{
 .table-content{
 	background-color: #fff;
 	padding: 20px;
+	min-height: 500px;
+}
+
+.elem{
+	width: 63px;
+	height: 72px;
+	margin: 10px 0.5px;
+	padding: 5px;
+	text-align: center;
+}
+
+.elem-number{
+	font-size: 14px;
+}
+
+.elem-symb{
+	font-size: 21px;
+}
+
+.elem-name{
+	font-size: 10px;
+}
+
+.elem.-Me{
+	background-color: #dedbee;
+}
+
+.elem.-notMe{
+	background-color: #fff83a;
+}
+
+.table-row {
+	display: flex;
 }
