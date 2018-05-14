@@ -408,61 +408,175 @@ $(document).ready(function(){
 			{
 				symb: 'Rh',
 				name: 'Родий',
-				number: 28,
+				number: 45,
 				type: 'Trans'
 			},
 			{
 				symb: 'Pd',
 				name: 'Паладий',
-				number: 29,
+				number: 46,
 				type: 'Trans'
 			},
 			{
 				symb: 'Ag',
 				name: 'Серебро',
-				number: 30,
+				number: 47,
 				type: 'Trans'
 			},
 			{
 				symb: 'Cd',
 				name: 'Кадмий',
-				number: 31,
+				number: 48,
 				type: 'Trans'
 			},
 			{
 				symb: 'In',
 				name: 'Индий',
-				number: 32,
+				number: 49,
 				type: 'Post'
 			},
 			{
 				symb: 'Sn',
 				name: 'Олово',
-				number: 32,
+				number: 50,
 				type: 'Post'
 			},
 			{
 				symb: 'Sb',
 				name: 'Сурьма',
-				number: 33,
+				number: 51,
 				type: 'Metalloid'
 			},
 			{
 				symb: 'Te',
 				name: 'Теллур',
-				number: 34,
+				number: 52,
 				type: 'Metalloid'
 			},
 			{
 				symb: 'I',
 				name: 'Йод',
-				number: 35,
+				number: 53,
 				type: 'Gallogen'
 			},
 			{
 				symb: 'Xe',
 				name: 'Ксенон',
-				number: 36,
+				number: 54,
+				type: 'NobleGas'
+			}
+
+		],
+		[
+			{
+				symb: 'C',
+				name: 'Рубидий',
+				number: 37,
+				type: 'AlMe'
+			},
+			{
+				symb: 'Sr',
+				name: 'Стронций',
+				number: 38,
+				type: 'AlErMe'
+			},
+			{
+				isEmpty: 'true'
+			},
+			{
+				symb: 'Y',
+				name: 'Итрий',
+				number: 39,
+				type: 'Trans'
+			},
+			{
+				symb: 'Zr',
+				name: 'Циркорий',
+				number: 40,
+				type: 'Trans'
+			},
+			{
+				symb: 'Nb',
+				name: 'Ниобий',
+				number: 41,
+				type: 'Trans'
+			},
+			{
+				symb: 'Mo',
+				name: 'Молибден',
+				number: 42,
+				type: 'Trans'
+			},
+			{
+				symb: 'Tc',
+				name: 'Техниций',
+				number: 43,
+				type: 'Trans'
+			},
+			{
+				symb: 'Ru',
+				name: 'Рутений',
+				number: 44,
+				type: 'Trans'
+			},
+			{
+				symb: 'Rh',
+				name: 'Родий',
+				number: 45,
+				type: 'Trans'
+			},
+			{
+				symb: 'Pd',
+				name: 'Паладий',
+				number: 46,
+				type: 'Trans'
+			},
+			{
+				symb: 'Ag',
+				name: 'Серебро',
+				number: 47,
+				type: 'Trans'
+			},
+			{
+				symb: 'Cd',
+				name: 'Кадмий',
+				number: 48,
+				type: 'Trans'
+			},
+			{
+				symb: 'In',
+				name: 'Индий',
+				number: 49,
+				type: 'Post'
+			},
+			{
+				symb: 'Sn',
+				name: 'Олово',
+				number: 50,
+				type: 'Post'
+			},
+			{
+				symb: 'Sb',
+				name: 'Сурьма',
+				number: 51,
+				type: 'Metalloid'
+			},
+			{
+				symb: 'Te',
+				name: 'Теллур',
+				number: 52,
+				type: 'Metalloid'
+			},
+			{
+				symb: 'I',
+				name: 'Йод',
+				number: 53,
+				type: 'Gallogen'
+			},
+			{
+				symb: 'Xe',
+				name: 'Ксенон',
+				number: 54,
 				type: 'NobleGas'
 			}
 

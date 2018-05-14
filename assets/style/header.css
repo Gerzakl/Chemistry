@@ -1,0 +1,33 @@
+header{
+	background-color: #2c2f33;
+	height: 100px;
+	line-height: 35px;
+}
+
+.links a{
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin: 0 10px;
+	text-decoration: none;
+	transition: .3s;
+}
+
+.links a:hover{
+	color: #56ef65;
+}
+
+.logo{
+	width: 100px;
+}
+
+.logo img{
+	width: 100px;
+}
+
+header .container{
+	width: 1200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
