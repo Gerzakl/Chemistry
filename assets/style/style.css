@@ -3,9 +3,14 @@
 	src: url(../fonts/Keleti-Regular/Keleti-Regular.ttf);
 }
 
+@font-face{
+	font-family: "Aexkon";
+	src: url(../fonts/Aexkon/AEXKON_Regular.ttf);
+}
+
 *{
 	box-sizing: border-box;
-	font-family: "Keleti";
+	font-family: "Aexkon";
 }
 
 body,h1,h2,h3,p{

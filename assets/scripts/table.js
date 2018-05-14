@@ -408,61 +408,289 @@ $(document).ready(function(){
 			{
 				symb: 'Rh',
 				name: 'Родий',
-				number: 28,
+				number: 45,
 				type: 'Trans'
 			},
 			{
 				symb: 'Pd',
 				name: 'Паладий',
-				number: 29,
+				number: 46,
 				type: 'Trans'
 			},
 			{
 				symb: 'Ag',
 				name: 'Серебро',
-				number: 30,
+				number: 47,
 				type: 'Trans'
 			},
 			{
 				symb: 'Cd',
 				name: 'Кадмий',
-				number: 31,
+				number: 48,
 				type: 'Trans'
 			},
 			{
 				symb: 'In',
 				name: 'Индий',
-				number: 32,
+				number: 49,
 				type: 'Post'
 			},
 			{
 				symb: 'Sn',
 				name: 'Олово',
-				number: 32,
+				number: 50,
 				type: 'Post'
 			},
 			{
 				symb: 'Sb',
 				name: 'Сурьма',
-				number: 33,
+				number: 51,
 				type: 'Metalloid'
 			},
 			{
 				symb: 'Te',
 				name: 'Теллур',
-				number: 34,
+				number: 52,
 				type: 'Metalloid'
 			},
 			{
 				symb: 'I',
 				name: 'Йод',
-				number: 35,
+				number: 53,
 				type: 'Gallogen'
 			},
 			{
 				symb: 'Xe',
 				name: 'Ксенон',
-				number: 36,
+				number: 54,
+				type: 'NobleGas'
+			}
+
+		],
+		[
+			{
+				symb: 'Cs',
+				name: 'Цезий',
+				number: 55,
+				type: 'AlMe'
+			},
+			{
+				symb: 'Ba',
+				name: 'Барий',
+				number: 56,
+				type: 'AlErMe'
+			},
+			{
+				isEmpty: 'true'
+			},
+			{
+				symb: 'Lu',
+				name: 'Лютенций',
+				number: 71,
+				type: 'Trans'
+			},
+			{
+				symb: 'Hf',
+				name: 'Гафний',
+				number: 72,
+				type: 'Trans'
+			},
+			{
+				symb: 'Ta',
+				name: 'Тантал',
+				number: 73,
+				type: 'Trans'
+			},
+			{
+				symb: 'W',
+				name: 'Вольфрам',
+				number: 74,
+				type: 'Trans'
+			},
+			{
+				symb: 'Re',
+				name: 'Рений',
+				number: 75,
+				type: 'Trans'
+			},
+			{
+				symb: 'Os',
+				name: 'Осмий',
+				number: 76,
+				type: 'Trans'
+			},
+			{
+				symb: 'Ir',
+				name: 'Иридий',
+				number: 77,
+				type: 'Trans'
+			},
+			{
+				symb: 'Pt',
+				name: 'Платина',
+				number: 78,
+				type: 'Trans'
+			},
+			{
+				symb: 'Au',
+				name: 'Золото',
+				number: 79,
+				type: 'Trans'
+			},
+			{
+				symb: 'Hg',
+				name: 'Ртуть',
+				number: 80,
+				type: 'Trans'
+			},
+			{
+				symb: 'Tl',
+				name: 'Таллий',
+				number: 81,
+				type: 'Post'
+			},
+			{
+				symb: 'Pb',
+				name: 'Свинец',
+				number: 82,
+				type: 'Post'
+			},
+			{
+				symb: 'Bi',
+				name: 'Висмут',
+				number: 83,
+				type: 'Post'
+			},
+			{
+				symb: 'Po',
+				name: 'Полоний',
+				number: 84,
+				type: 'Metalloid'
+			},
+			{
+				symb: 'At',
+				name: 'Астат',
+				number: 85,
+				type: 'Gallogen'
+			},
+			{
+				symb: 'Rn',
+				name: 'Радон',
+				number: 86,
+				type: 'NobleGas'
+			}
+
+		],
+		[
+			{
+				symb: 'Fr',
+				name: 'Франций',
+				number: 87,
+				type: 'AlMe'
+			},
+			{
+				symb: 'Ra',
+				name: 'Радий',
+				number: 88,
+				type: 'AlErMe'
+			},
+			{
+				isEmpty: 'true'
+			},
+			{
+				symb: 'Lr',
+				name: 'Лоуренсий',
+				number: 103,
+				type: 'Trans'
+			},
+			{
+				symb: 'Rf',
+				name: 'РЕзерфордий',
+				number: 104,
+				type: 'Trans'
+			},
+			{
+				symb: 'Ta',
+				name: 'Тантал',
+				number: 105,
+				type: 'Trans'
+			},
+			{
+				symb: 'Db',
+				name: 'Дубний',
+				number: 106,
+				type: 'Trans'
+			},
+			{
+				symb: 'Sg',
+				name: 'Сиборгий',
+				number: 106,
+				type: 'Trans'
+			},
+			{
+				symb: 'Bh',
+				name: 'Борий',
+				number: 107,
+				type: 'Trans'
+			},
+			{
+				symb: 'Ir',
+				name: 'Иридий',
+				number: 108,
+				type: 'Trans'
+			},
+			{
+				symb: 'Pt',
+				name: 'Платина',
+				number: 109,
+				type: 'Trans'
+			},
+			{
+				symb: 'Au',
+				name: 'Золото',
+				number: 110,
+				type: 'Trans'
+			},
+			{
+				symb: 'Hg',
+				name: 'Ртуть',
+				number: 111,
+				type: 'Trans'
+			},
+			{
+				symb: 'Tl',
+				name: 'Таллий',
+				number: 112,
+				type: 'Post'
+			},
+			{
+				symb: 'Pb',
+				name: 'Свинец',
+				number: 113,
+				type: 'Post'
+			},
+			{
+				symb: 'Bi',
+				name: 'Висмут',
+				number: 114,
+				type: 'Post'
+			},
+			{
+				symb: 'Lv',
+				name: 'Ливерморий',
+				number: 115,
+				type: 'Post'
+			},
+			{
+				symb: 'Uus',
+				name: 'Астат',
+				number: 116,
+				type: 'Gallogen'
+			},
+			{
+				symb: 'Uuo',
+				name: 'Радон',
+				number: 117,
 				type: 'NobleGas'
 			}
 
