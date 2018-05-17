@@ -71,3 +71,45 @@ body{
 .table-row {
 	display: flex;
 }
+	
+.mendeleev img{
+	position: absolute;
+	top: 62%;
+	left: 16%;
+	transform: translate(-50%,-50%);
+	transform: rotateY(180deg);
+}
+
+.elem-logo{
+	position: absolute;
+	display: block;
+	top: 60%;
+	left: 60%;
+	transform: translate(-50%,-50%);
+	width: 530px;
+	height: 540px;
+	background-color: white;
+	border: 5px solid black;
+	border-radius: 20px;
+	text-align: center;
+
+}
+
+.elem-logo img{
+	width: 500px;
+	height: 500px;
+}
+
+.elem-info{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	top: 30%;
+	left: 30%;
+	transform: translate(-50%,-50%);
+	width: 200px;
+	min-height: 100px;
+	background-color: white;
+	border: 5px solid black;
+	border-radius: 20px;
+}
