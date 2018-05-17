@@ -10,7 +10,15 @@
 
 *{
 	box-sizing: border-box;
+<<<<<<< HEAD
 	font-family: "Aexkon";
+=======
+	font-family: "Trebuchet MS";
+}
+
+a{
+	text-decoration: none;
+>>>>>>> 088748e24cc6294a57b6ad712497824dae80802d
 }
 
 body,h1,h2,h3,p{
@@ -31,39 +39,7 @@ h3{
 	font-size: 16px	;
 }
 
-.section-main{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background-color: #660096;
-	color: white;
-}
-
 .container{
 	width: 1440px;
 	margin: 0 auto;
-}
-
-.section-main .container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-
-
-.main-nav{
-	display: flex;
-}
-
-
-.btn{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-}
-
-.main-link{
-	margin: 50px 50px 0;
 }

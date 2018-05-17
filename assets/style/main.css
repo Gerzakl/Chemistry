@@ -1,0 +1,36 @@
+.section-main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #660096;
+	color: white;
+}
+
+
+.section-main .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+.main-title a{
+	color: white;
+}
+
+.main-nav{
+	display: flex;
+}
+
+
+.btn{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.main-link{
+	margin: 50px 50px 0;
+}

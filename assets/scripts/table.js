@@ -469,6 +469,7 @@ $(document).ready(function(){
 		],
 		[
 			{
+
 				symb: 'Cs',
 				name: 'Цезий',
 				number: 55,
@@ -478,7 +479,7 @@ $(document).ready(function(){
 				symb: 'Ba',
 				name: 'Барий',
 				number: 56,
-				type: 'AlErMe'
+				type: 'AlErMe',
 			},
 			{
 				isEmpty: 'true'
@@ -691,8 +692,8 @@ $(document).ready(function(){
 				symb: 'Uuo',
 				name: 'Радон',
 				number: 117,
-				type: 'NobleGas'
-			}
+		 		type: 'NobleGas'
+			},
 
 		],
 	];
