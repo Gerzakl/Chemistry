@@ -7,6 +7,8 @@ $(document).ready(function(){
 				symb: 'H',
 				name: 'Водород',
 				number: 1,
+				weight: 1.0087,
+				composition: 1 + 's' + '<sup>1</sup>',
 				type: 'otherNotMe'
 			},
 			{
@@ -64,6 +66,8 @@ $(document).ready(function(){
 				symb: 'He',
 				name: 'Гелий',
 				number: 2,
+				weight: 4.0028,
+				composition: 1 + 's' + '<sup>2</sup>',
 				type: 'NobleGas'
 			}
 
@@ -74,6 +78,8 @@ $(document).ready(function(){
 				symb: 'Li',
 				name: 'Литий',
 				number: 3,
+				weight: 6.941,
+				composition: 2 + 's' + '<sup>1</sup>',
 				type: 'AlMe'
 			},
 			{
@@ -698,7 +704,7 @@ $(document).ready(function(){
 		],
 	];
 
-	console.log(table);
+	let extraIsOpen = false;
 
 
 	function createBlock(elem, rowIndex) {
@@ -724,6 +730,35 @@ $(document).ready(function(){
 				}
 			};
 		};
+
+		$('.elem').click(function() {
+
+			clearAll();
+			let elem = {};
+			let rowCount = $(this).parent().index();
+			let symb = $(this).find('.elem-symb').text();
+
+			for ( let i = 0; i < table[rowCount].length; ++i) {
+				if (table[rowCount][i].symb === symb) {
+					elem = table[rowCount][i];
+				}
+			}
+			$('.js-darknessWannaShy').addClass('-darkness_appears_and_nobody_has_been_expected_that');
+			$('.js-darknessWannaShy').click(function(){
+				$('.js-darknessWannaShy').removeClass('-darkness_appears_and_nobody_has_been_expected_that');
+				$('.js-show-info').removeClass('-show');
+			});
+	  		$('.js-show-info').addClass('-show');
+	  		$('.elem-logo').append('<img src="assets/elements/' + elem.symb + '.jpg">');
+	  		$('.elem-info').append('<h3>' + elem.symb + ' ' + elem.name + '</h3><br><h3>Масса:' + elem.weight + '</h3><br><h3>Строение: ' + elem.composition + '</h3>')
+	  		extraIsOpen = true;
+	  	})
+
+	  	function clearAll() {
+	  		$('.js-show-info').html('');
+	  		$('.elem-logo').html('');
+	  		$('.elem-info').html('');
+	  	}
 });
 
 
