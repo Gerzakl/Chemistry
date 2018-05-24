@@ -750,7 +750,7 @@ $(document).ready(function(){
 			});
 	  		$('.js-show-info').addClass('-show');
 	  		$('.elem-logo').append('<img src="assets/elements/' + elem.symb + '.jpg">');
-	  		$('.elem-info').append('<h3>' + elem.symb + ' ' + elem.name + '</h3><br><h3>Масса:' + elem.weight + '</h3><br><h3>Строение: ' + elem.composition + '</h3>')
+	  		$('.elem-info').append('<h3>' + elem.symb + ' ' + elem.name + '</h3><br><h3>Масса:' + elem.weight + '</h3><br><h3>Строение: ' + elem.composition + '</h3>') 
 	  		extraIsOpen = true;
 	  	})
 
@@ -758,6 +758,29 @@ $(document).ready(function(){
 	  		$('.js-show-info').html('');
 	  		$('.elem-logo').html('');
 	  		$('.elem-info').html('');
+	  	}
+
+	  	function getFirstElem(){
+			return $('.js-first-calc-elem').val();
+		} 
+
+		function getSecondElem(){
+			return $('.js-second-calc-elem').val();
+		}
+
+		$('.calc-count').click(function(){
+  			calc();
+  			
+  		})
+
+	  	function calc(){
+	  		 $('.calc-result').text(getFirstElem() + getSecondElem());
+	  		console.log(getFirstElem());
+
+	  		
+ 			
+
+	  		
 	  	}
 });
 

@@ -2,13 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Mendel Dayz</title>
+		<title>Calculator</title>
 		<link rel="stylesheet" type="text/css" href="assets/style/style.css">
 		<link rel="stylesheet" type="text/css" href="assets/style/header.css">
-		<link rel="stylesheet" type="text/css" href="assets/style/table.css">
-		<link rel="stylesheet" type="text/css" href="assets/style/main.css">
+		<link rel="stylesheet" type="text/css" href="assets/style/calculator.css">
+
 	</head>
-	<body>		
+	<body>
 		<section class="header">
 			<header>
 				<div class="container">
@@ -24,28 +24,22 @@
 				</div>
 			</header>
 		</section>
-		<section class="section-table">
+		<section class="section-calc">
 			<div class="container">
-				<div class="table-header">
-					<h2>Таблица<br>Менделеева</h2>
+				<div class="calc">
+					<div class="calc-input">
+						<input  class="calc-elem js-first-calc-elem" type="text">
+						<input  class="calc-elem js-second-calc-elem" type="text">
+						<input  class="calc-elem js-third-calc-elem" type="text">
+					</div>
+					<div class="calc-count-container">
+						<button class="calc-count">Посчитать</button>
+					</div>
+					<div class="calc-result"></div>
 				</div>
-				<div class="table-content"></div>
 			</div>
 		</section>
-		<div class="mendeleev js-show-info">
-			<img src="assets/img/Mendeleev.png">
-		</div>
-
-		<div class="elem-info js-show-info">
-
-		</div>
-
-		<div class="elem-logo js-show-info"></div>
-
-		<div class="darkness js-darknessWannaShy"></div>
-
-
-			<script
+		<script
   			src="https://code.jquery.com/jquery-3.3.1.min.js"
   			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   			crossorigin="anonymous">
