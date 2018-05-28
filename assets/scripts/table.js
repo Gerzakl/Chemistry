@@ -719,69 +719,96 @@ $(document).ready(function(){
 		$('.table-content').append('<div class="table-row -row-' + index + '"></div>');
 
 	}
+	for(let j = 0; j < table.length; j++){
+		createRow(j);
+		for(let i = 0; i < table[j].length; i++){
+			if (table[j][i].isEmpty) {
+				createEmptyBlock(table[j][i], j);
+			} else {
+				createBlock(table[j][i], j);
+			}
+		};
+	};
 
-		for(let j = 0; j < table.length; j++){
-			createRow(j);
+
+
+	$('.elem').click(function() {
+
+		clearAll();
+		let elem = {};
+		let rowCount = $(this).parent().index();
+		let symb = $(this).find('.elem-symb').text();
+
+		for ( let i = 0; i < table[rowCount].length; ++i) {
+			if (table[rowCount][i].symb === symb) {
+				elem = table[rowCount][i];
+			}
+		}
+		$('.js-darknessWannaShy').addClass('-darkness_appears_and_nobody_has_been_expected_that');
+		$('.js-darknessWannaShy').click(function(){
+			$('.js-darknessWannaShy').removeClass('-darkness_appears_and_nobody_has_been_expected_that');
+			$('.js-show-info').removeClass('-show');
+		});
+	  	$('.js-show-info').addClass('-show');
+	  	$('.elem-logo').append('<img src="assets/elements/' + elem.symb + '.jpg">');
+	  	$('.elem-info').append('<h3>' + elem.symb + ' ' + elem.name + '</h3><br><h3>Масса:' + elem.weight + '</h3><br><h3>Строение: ' + elem.composition + '</h3>') 
+	  	extraIsOpen = true;
+	})
+
+	function clearAll() {
+	  	$('.js-show-info').html('');
+	  	$('.elem-logo').html('');
+	  	$('.elem-info').html('');
+	  	}
+
+	function getFirstElem(){
+		return $('.js-first-calc-elem').val();
+	} 
+
+	function getSecondElem(){
+		return $('.js-second-calc-elem').val();
+	}
+
+	function getThirdElem(){
+		return $('.js-third-calc-elem').val();
+	}
+
+	$('.calc-count').click(function(){
+  		calc();	
+  	})
+
+	function calc(){
+		let first = 0,
+		  	second = 0,
+		  	third = 0;
+
+	  	for(let j = 0; j < table.length; j++){
 			for(let i = 0; i < table[j].length; i++){
-				if (table[j][i].isEmpty) {
-					createEmptyBlock(table[j][i], j);
-				} else {
-					createBlock(table[j][i], j);
+				let tableElem = table[j][i].symb
+				if (getFirstElem() == tableElem) {
+					first = getFirstElem();
+				}
+				if (getSecondElem() == tableElem) {
+					second = getSecondElem();
+				}
+				if (getThirdElem() == tableElem) {
+					third = getThirdElem();
 				}
 			};
 		};
-
-		$('.elem').click(function() {
-
-			clearAll();
-			let elem = {};
-			let rowCount = $(this).parent().index();
-			let symb = $(this).find('.elem-symb').text();
-
-			for ( let i = 0; i < table[rowCount].length; ++i) {
-				if (table[rowCount][i].symb === symb) {
-					elem = table[rowCount][i];
-				}
-			}
-			$('.js-darknessWannaShy').addClass('-darkness_appears_and_nobody_has_been_expected_that');
-			$('.js-darknessWannaShy').click(function(){
-				$('.js-darknessWannaShy').removeClass('-darkness_appears_and_nobody_has_been_expected_that');
-				$('.js-show-info').removeClass('-show');
-			});
-	  		$('.js-show-info').addClass('-show');
-	  		$('.elem-logo').append('<img src="assets/elements/' + elem.symb + '.jpg">');
-	  		$('.elem-info').append('<h3>' + elem.symb + ' ' + elem.name + '</h3><br><h3>Масса:' + elem.weight + '</h3><br><h3>Строение: ' + elem.composition + '</h3>') 
-	  		extraIsOpen = true;
-	  	})
-
-	  	function clearAll() {
-	  		$('.js-show-info').html('');
-	  		$('.elem-logo').html('');
-	  		$('.elem-info').html('');
-	  	}
-
-	  	function getFirstElem(){
-			return $('.js-first-calc-elem').val();
-		} 
-
-		function getSecondElem(){
-			return $('.js-second-calc-elem').val();
+		if (first == 0 || second == 0){
+			$('.calc-result').text('Fill The Missing Element')
 		}
-
-		$('.calc-count').click(function(){
-  			calc();
-  			
-  		})
-
-	  	function calc(){
-	  		 $('.calc-result').text(getFirstElem() + getSecondElem());
-	  		console.log(getFirstElem());
-
-	  		
- 			
-
-	  		
-	  	}
+		else{
+			if (third == 0){
+				$('.calc-result').text(first + second);
+			}
+			else{
+				$('.calc-result').text(first + second + third);
+			}
+		}
+		return;
+	}
 });
 
 
