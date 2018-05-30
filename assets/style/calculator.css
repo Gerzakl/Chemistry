@@ -29,6 +29,7 @@
 	min-height: 75px;
 	margin: 0 30px;
 	text-align: center;
+	border: 1px solid grey;
 }	
 
 .calc-count{
@@ -38,4 +39,9 @@
 	border: none;
 	text-align: center;
 	color: white;
+	margin-bottom: 15px; 
+}
+
+.calc-elem.-wrong-value{
+	border: 2px solid red;
 }
