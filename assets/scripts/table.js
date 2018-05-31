@@ -786,7 +786,7 @@ $(document).ready(function(){
 			for(let i = 0; i < table[j].length; i++){
 				let tableElem = table[j][i].symb
 				if (getFirstElem() == tableElem) {
-					first = getFirstElem();
+					first = table[j][i];
 				}
 				if (getSecondElem() == tableElem) {
 					second = getSecondElem();
@@ -796,10 +796,10 @@ $(document).ready(function(){
 				}
 			};
 		};
+		
 		if (first == 0 || second == 0){
 			$('.calc-result').text('Fill The Missing Element')
-		}
-		else{
+		} else {
 			if (third == 0){
 				$('.calc-result').text(first + second);
 			}
