@@ -29,8 +29,14 @@
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
+	background-color: white;
 }
 
 .main-link{
 	margin: 50px 50px 0;
+}
+
+.btn img{
+	width: 65px;
+	height: 65px;
 }

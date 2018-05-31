@@ -86,6 +86,8 @@ $(document).ready(function(){
 				symb: 'Be',
 				name: 'Берилий',
 				number: 4,
+				weight: 9.012,
+				composition: 2 + 's' + '<sup>2</sup>',
 				type: 'AlErMe'
 			},
 			{
@@ -125,36 +127,45 @@ $(document).ready(function(){
 				symb: 'B',
 				name: 'бор',
 				number: 5,
+				weight: 10.811,
+				composition: 2 + 's' + '<sup>2</sup>' + 2 + 'p' + '<sup>1</sup>',
 				type: 'Metalloid'
 			},
 			{
 				symb: 'C',
 				name: 'Углерод',
 				number: 6,
+				weight: 12.01,
+				composition: 2 + 's' + '<sup>2</sup>' + 2 + 'p' + '<sup>2</sup>',
 				type: 'otherNotMe'
 			},
 			{
 				symb: 'N',
 				name: 'Азот',
 				number: 7,
+				weight: 14,
+				composition: 2 + 's' + '<sup>2</sup>' + 2 + 'p' + '<sup>3</sup>',
 				type: 'otherNotMe'
 			},
 			{
 				symb: 'O',
 				name: 'Кислород',
 				number: 8,
+				composition: 2 + 's' + '<sup>2</sup>' + 2 + 'p' + '<sup>4</sup>',
 				type: 'otherNotMe'
 			},
 			{
 				symb: 'F',
 				name: 'Фтор',
 				number: 9,
+				composition: 2 + 's' + '<sup>2</sup>' + 2 + 'p' + '<sup>5</sup>',
 				type: 'Gallogen'
 			},
 			{
 				symb: 'Ne',
 				name: 'Неон',
 				number: 10,
+				composition: 2 + 's' + '<sup>2</sup>' + 2 + 'p' + '<sup>6</sup>',
 				type: 'NobleGas'
 			}
 
@@ -753,7 +764,7 @@ $(document).ready(function(){
 	  	$('.elem-logo').append('<img src="assets/elements/' + elem.symb + '.jpg">');
 	  	$('.elem-info').append('<h3>' + elem.symb + ' ' + elem.name + '</h3><br><h3>Масса:' + elem.weight + '</h3><br><h3>Строение: ' + elem.composition + '</h3>') 
 	  	extraIsOpen = true;
-	})
+	});
 
 	function clearAll() {
 	  	$('.js-show-info').html('');
@@ -778,28 +789,39 @@ $(document).ready(function(){
   	})
 
 	function calc(){
+
 		let first = 0,
+			firstElem = 0,
 		  	second = 0,
-		  	third = 0;
+		  	secondElem = 0,
+		  	third = 0,
+		  	thirdElem = 0;
 
 	  	for(let j = 0; j < table.length; j++){
 			for(let i = 0; i < table[j].length; i++){
 				let tableElem = table[j][i].symb
 				if (getFirstElem() == tableElem) {
-					first = table[j][i];
+					first = table[j][i].symb
+					firstElem = table[j][i]
+				} else {
+					$('.calc-elem').addClass('-wrong-value')
+					setTimeout( function(){$('.calc-elem').removeClass('-wrong-value')}, 5000)
 				}
 				if (getSecondElem() == tableElem) {
-					second = getSecondElem();
+					second = table[j][i].symb
+					secondElem = table[j][i]
 				}
 				if (getThirdElem() == tableElem) {
-					third = getThirdElem();
+					third = table[i][i].symb
+					thirdElem = table[j][i]
 				}
 			};
 		};
 		
 		if (first == 0 || second == 0){
-			$('.calc-result').text('Fill The Missing Element')
-		} else {
+			$('.calc-result').text('Либо такого элемента нет, либо вы ничего не ввели')
+		}
+		else{
 			if (third == 0){
 				$('.calc-result').text(first + second);
 			}
